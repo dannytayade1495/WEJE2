@@ -1,0 +1,3 @@
+user = root
+password = root
+dburl = jdbc:mysql://localhost:3306/weje2

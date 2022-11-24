@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.Runnable"/>
+    <fullyQualifiedTypeName name="com.jspiders.multithreading.threads.MyThread1"/>
+    <fullyQualifiedTypeName name="com.jspiders.multithreading.threads.MyThread2"/>
+    <fullyQualifiedTypeName name="com.jspiders.multithreading1.resource.Account"/>
+    <fullyQualifiedTypeName name="com.jspiders.multithreading1.threads.Husband"/>
+    <fullyQualifiedTypeName name="com.jspiders.multithreading1.threads.Wife"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="com.jspiders.multithreadingwaitandnotify.resource.Pizza"/>
+    <fullyQualifiedTypeName name="com.jspiders.multithreadingwaitandnotify.threads.Customer"/>
+    <fullyQualifiedTypeName name="com.jspiders.multithreadingwaitandnotify.threads.Cafe"/>
+    <fullyQualifiedTypeName name="java.io.FileWriter"/>
+    <fullyQualifiedTypeName name="java.io.Serializable"/>
+    <fullyQualifiedTypeName name="com.jspiders.serializationdeserialization.objects.User"/>
+    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+    <fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
+    <fullyQualifiedTypeName name="com.jspiders.singleton.object.SingletonLazy"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="com.jspiders.designpatternstask.objects.Deposit"/>
+    <fullyQualifiedTypeName name="com.jspiders.designpatternstask.objects.Withdraw"/>
+    <fullyQualifiedTypeName name="com.jspiders.designpatternstask.objects.CheckBalance"/>
+    <fullyQualifiedTypeName name="com.jspiders.designpatternstask.objects.Account"/>
+    <fullyQualifiedTypeName name="com.jspiders.builderpattern.object.Contact"/>
+    <fullyQualifiedTypeName name="com.jspiders.builderpattern.builder.ContactBuilder"/>
+    <fullyQualifiedTypeName name="com.jspiders.builderpattern.builder.MobileBuilder"/>
+    <fullyQualifiedTypeName name="com.jspiders.builderpattern.object.Mobile"/>
+    <fullyQualifiedTypeName name="com.jspiders.adapterpattern.objects.Employee"/>
+    <fullyQualifiedTypeName name="com.jspiders.adapterpattern.interfaces.CompanyEvents"/>
+    <fullyQualifiedTypeName name="com.jspiders.adapterpattern.adapter.CompEmpAdapter"/>
+    <fullyQualifiedTypeName name="java.lang.ClassNotFoundException"/>
+    <fullyQualifiedTypeName name="java.sql.Statement"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.util.Properties"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.jdbc.CallableStatement"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
+    <fullyQualifiedTypeName name="java.lang.Class"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="java.sql.CallableStatement"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="com.jspiders.jdbc4.entity.Student"/>
+</qualifiedTypeNameHistroy>

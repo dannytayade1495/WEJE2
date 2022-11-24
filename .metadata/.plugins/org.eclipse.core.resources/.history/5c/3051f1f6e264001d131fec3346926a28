@@ -1,0 +1,5 @@
+package com.jspiders.jdbc1.update;
+
+public class JdbcUpdate {
+
+}

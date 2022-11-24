@@ -1,0 +1,21 @@
+package com.jspiders.jdbc1.select;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class JdbcSelect {
+	
+	private static Connection connection;
+	private static Statement statement;
+	private static ResultSet resultSet;
+	
+	public static void main(String[] args) {
+		try {
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

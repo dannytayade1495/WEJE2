@@ -1,0 +1,9 @@
+package com.jspiders.factorypattern.main;
+
+public class MovieMain {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.jspiders.jdbc4.select;
+
+public class JdbcSelect {
+
+}

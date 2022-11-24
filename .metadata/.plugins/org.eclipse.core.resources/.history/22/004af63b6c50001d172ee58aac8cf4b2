@@ -1,0 +1,12 @@
+package com.jspiders.factorypattern.main;
+
+public class MovieMain {
+	
+	static boolean loop = true;
+	
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

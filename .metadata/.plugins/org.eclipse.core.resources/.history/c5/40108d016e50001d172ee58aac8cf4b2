@@ -1,0 +1,51 @@
+package com.jspiders.factorypattern.main;
+
+import java.util.Scanner;
+
+import com.jspiders.factorypattern.inter.Movie;
+
+public class MovieMain {
+	
+	static boolean loop = true;
+	
+	public static void main(String[] args) {
+		
+		while (loop) {
+			
+		}
+		
+	}
+	
+	public static Movie movieFactory() {
+		
+		System.out.println("Select a movie to watch:\n"
+				+ "1. K.G.F. Chapter 2\n"
+				+ "2. Vikram\n"
+				+ "3. Pushpa\n"
+				+ "4. Kantara");
+		Scanner scanner = new Scanner(System.in);
+		int choice = scanner.nextInt();
+		switch (choice) {
+		case 1:
+			
+			break;
+
+		case 2:
+			
+			break;
+			
+		case 3:
+	
+			break;
+			
+		case 4:
+	
+			break;
+			
+		default:
+			break;
+		}
+		
+	}
+
+}
