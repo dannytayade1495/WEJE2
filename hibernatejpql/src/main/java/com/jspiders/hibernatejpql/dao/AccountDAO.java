@@ -78,8 +78,7 @@ public class AccountDAO {
 //			manager.persist(account2);
 //			manager.persist(account3);
 			
-			query = "from AccountDTO "
-					+ "where accountHolder like '%y%'";
+			query = "from AccountDTO ";
 			Query createQuery = manager.createQuery(query);
 			List accounts = createQuery.getResultList();
 			
