@@ -1,5 +1,0 @@
-package com.jspiders.jdbc3.callable;
-
-public class JdbcCall {
-
-}
