@@ -11,7 +11,7 @@
 </head>
 <body>
 	<h1>This is Tag Demo 2 jsp</h1>
-	<%!List<Integer> list = new ArrayList();%>
+	<%!List<Integer> list = new ArrayList<Integer>();%>
 	<%
 	list.add(1);
 	list.add(2);
