@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class=
+		"com.jspiders.springcorexml.bean.FatherBean1"
+		name="father1">
+		<property name="id" value="1" />
+		<property name="name" value="Messi" />
+	</bean>
+
+	<bean class=
+		"com.jspiders.springcorexml.bean.ChildBean1"
+		name="child1">
+		<property name="id" value="1" />
+		<property name="name" value="Ronaldo" />
+		<property name="father" ref="father1" />
+	</bean>
+
+	<bean class=
+		"com.jspiders.springcorexml.bean.ChildBean1"
+		name="child2">
+		<property name="id" value="2" />
+		<property name="name" value="Mbappe" />
+		<property name="father" ref="father1" />
+	</bean>
+
+</beans>

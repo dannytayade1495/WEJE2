@@ -28,5 +28,14 @@
 		<property name="email" value="karan@gmail.com" />
 		<property name="contact" value="8976542310" />
 	</bean>
+	
+	<bean 
+	class="com.jspiders.springcorexml.bean.StudentBean" 
+		name="student3">
+	<constructor-arg name="id" value="3"/>
+	<constructor-arg name="name" value="Amar"/>
+	<constructor-arg name="email" value="amar@gmail.com"/>
+	<constructor-arg name="contact" value="9876543210"/>
+	</bean>
 
 </beans>

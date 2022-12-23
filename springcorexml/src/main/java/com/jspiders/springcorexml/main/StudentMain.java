@@ -18,8 +18,11 @@ public class StudentMain {
 //		StudentBean studentBean = 
 //				(StudentBean)context.getBean("student1");
 		
+//		StudentBean studentBean = 
+//				(StudentBean)context.getBean("student2");
+		
 		StudentBean studentBean = 
-				(StudentBean)context.getBean("student2");
+				(StudentBean)context.getBean("student3");
 		
 		System.out.println(studentBean);
 		
