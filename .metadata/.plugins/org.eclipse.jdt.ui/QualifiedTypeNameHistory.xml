@@ -1,22 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.Thread"/>
-    <fullyQualifiedTypeName name="com.jspiders.multithreadingwaitandnotify.resource.Pizza"/>
-    <fullyQualifiedTypeName name="com.jspiders.multithreadingwaitandnotify.threads.Customer"/>
-    <fullyQualifiedTypeName name="com.jspiders.multithreadingwaitandnotify.threads.Cafe"/>
-    <fullyQualifiedTypeName name="java.io.FileWriter"/>
-    <fullyQualifiedTypeName name="java.io.Serializable"/>
-    <fullyQualifiedTypeName name="com.jspiders.serializationdeserialization.objects.User"/>
-    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
-    <fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
-    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
-    <fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
-    <fullyQualifiedTypeName name="com.jspiders.singleton.object.SingletonLazy"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="com.jspiders.designpatternstask.objects.Deposit"/>
-    <fullyQualifiedTypeName name="com.jspiders.designpatternstask.objects.Withdraw"/>
-    <fullyQualifiedTypeName name="com.jspiders.designpatternstask.objects.CheckBalance"/>
     <fullyQualifiedTypeName name="com.jspiders.designpatternstask.objects.Account"/>
     <fullyQualifiedTypeName name="com.jspiders.builderpattern.object.Contact"/>
     <fullyQualifiedTypeName name="com.jspiders.builderpattern.builder.ContactBuilder"/>
@@ -49,15 +32,32 @@
     <fullyQualifiedTypeName name="javax.persistence.Id"/>
     <fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
     <fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.jspiders.hibernatejpql.dto.AccountDTO"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="com.jspiders.springcorexml.bean.WifeBean"/>
+    <fullyQualifiedTypeName name="com.jspiders.springcorexml.bean.HusbandBean"/>
+    <fullyQualifiedTypeName name="com.jspiders.springcorexml.bean.ChildBean"/>
+    <fullyQualifiedTypeName name="com.jspiders.springcorexml.bean.FatherBean"/>
+    <fullyQualifiedTypeName name="com.jspiders.springcorexml.bean.FatherBean1"/>
+    <fullyQualifiedTypeName name="com.jspiders.springcorexml.bean.ChildBean1"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.jspiders.springcorexml.bean.ProductBean"/>
+    <fullyQualifiedTypeName name="com.jspiders.springcorexml.bean.CustomerBean"/>
     <fullyQualifiedTypeName name="lombok.Data"/>
     <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
-    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="com.jspiders.springcoreannotations.config.StudentConfig"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="com.jspiders.springcoreannotations.bean.StudentBean"/>
     <fullyQualifiedTypeName name="com.jspiders.springcorexml.bean.StudentBean"/>
+    <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
+    <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
 </qualifiedTypeNameHistroy>
