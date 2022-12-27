@@ -14,21 +14,18 @@ import com.jspiders.springmvc.pojo.StudentPOJO;
 
 @Repository
 public class StudentRepository {
-	
-	@Autowired
-	private StudentPOJO pojo;
-	
+
 	private static EntityManagerFactory factory;
 	private static EntityManager manager;
 	private static EntityTransaction transaction;
 	private static Query query;
-	
+
 	private static void openConnection() {
 		factory = Persistence.createEntityManagerFactory("student");
 		manager = factory.createEntityManager();
 		transaction = manager.getTransaction();
 	}
-	
+
 	private static void closeConnection() {
 		if (factory != null) {
 			factory.close();
@@ -48,12 +45,11 @@ public class StudentRepository {
 	public StudentPOJO login(String username, String password) {
 		openConnection();
 		transaction.begin();
-		
-		
-		
+
 		transaction.commit();
 		closeConnection();
-		return pojo;
+		return null;
 	}
+
 
 }

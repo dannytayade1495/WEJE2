@@ -11,7 +11,6 @@ import lombok.Data;
 
 @Entity
 @Data
-@Component
 public class StudentPOJO {
 	
 	@Id
