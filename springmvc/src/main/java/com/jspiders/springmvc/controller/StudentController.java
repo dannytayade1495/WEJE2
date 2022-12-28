@@ -25,15 +25,29 @@ public class StudentController {
 
 	@PostMapping("/login")
 	public String login() {
-		StudentPOJO pojo = service.login();
-		if(pojo != null) {
-			return "Home";
-		}
 		return "LoginForm";
 	}
 	
 	@GetMapping("/add")
 	public String add() {
+		return "AddStudent";
+	}
+	
+	@PostMapping("/add")
+	public String addData(@RequestParam String name,
+			@RequestParam String email,
+			@RequestParam long contact,
+			@RequestParam String city,
+			@RequestParam String username,
+			@RequestParam String password,
+			ModelMap map) {
+		StudentPOJO student = service.add(name, email,
+				contact, city, username, password);
+		if (student != null) {
+			map.addAttribute("student", student);
+		} else {
+			map.addAttribute("msg", "Data not added.!");
+		}
 		return "AddStudent";
 	}
 	
@@ -52,4 +66,8 @@ public class StudentController {
 		return "RemoveStudent";
 	}
 
+	@GetMapping("/logout")
+	public String logout() {
+		return "LoginForm";
+	}
 }

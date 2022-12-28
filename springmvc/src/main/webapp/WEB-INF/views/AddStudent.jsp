@@ -1,6 +1,13 @@
+<%@page import="com.jspiders.springmvc.pojo.StudentPOJO"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-	<jsp:include page="NavBar.jsp"/>
+<jsp:include page="NavBar.jsp" />
+<%
+StudentPOJO student = (StudentPOJO) request.getAttribute("student");
+%>
+<%
+String msg = (String) request.getAttribute("msg");
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -46,7 +53,7 @@ body {
 
 	<fieldset>
 		<legend>Add Student Details</legend>
-		<form action="./addStudent" method="post">
+		<form action="./add" method="post">
 			<table>
 				<tr>
 					<td>Name :</td>
@@ -78,6 +85,22 @@ body {
 			</table>
 		</form>
 	</fieldset>
+	<%
+	if (student != null) {
+	%>
+	<h3 align="center">
+		<%=student.getName()%>
+		added successfully..!!
+	</h3>
+	<%
+	} else if (msg != null) {
+	%>
+	<h3 align="center">
+		<%=msg%>
+	</h3>
+	<%
+	}
+	%>
 
 </body>
 </html>

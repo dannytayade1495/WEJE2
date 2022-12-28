@@ -17,4 +17,10 @@ public class StudentService {
 		return pojo;
 	}
 
+	public StudentPOJO add(String name, String email, long contact, String city, String username, String password) {
+		StudentPOJO pojo = repository.add(name, email,
+				contact, city, username, password);
+		return pojo;
+	}
+
 }

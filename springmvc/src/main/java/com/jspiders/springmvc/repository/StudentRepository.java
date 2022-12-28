@@ -51,5 +51,21 @@ public class StudentRepository {
 		return null;
 	}
 
+	public StudentPOJO add(String name, String email, long contact, String city, String username, String password) {
+		openConnection();
+		transaction.begin();
+		StudentPOJO pojo = new StudentPOJO();
+		pojo.setName(name);
+		pojo.setEmail(email);
+		pojo.setContact(contact);
+		pojo.setCity(city);
+		pojo.setUsername(username);
+		pojo.setPassword(password);
+		manager.persist(pojo);
+		transaction.commit();
+		closeConnection();
+		return pojo;
+	}
+
 
 }
