@@ -1,7 +1,5 @@
 package com.jspiders.springmvc.controller;
 
-import javax.servlet.http.HttpServletRequest;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -25,7 +23,7 @@ public class StudentController {
 
 	@PostMapping("/login")
 	public String login() {
-		return "LoginForm";
+		return "Home";
 	}
 	
 	@GetMapping("/add")
@@ -53,6 +51,18 @@ public class StudentController {
 	
 	@GetMapping("/search")
 	public String search() {
+		return "SearchStudent";
+	}
+	
+	@PostMapping("/search")
+	public String searchData(@RequestParam int id,
+			ModelMap map) {
+		StudentPOJO student = service.search(id);
+		if (student != null) {
+			map.addAttribute("student", student);
+		} else {
+			map.addAttribute("msg", "Data not found..!!");
+		}
 		return "SearchStudent";
 	}
 	

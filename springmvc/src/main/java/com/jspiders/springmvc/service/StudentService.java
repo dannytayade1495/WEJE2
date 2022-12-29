@@ -22,5 +22,10 @@ public class StudentService {
 				contact, city, username, password);
 		return pojo;
 	}
+	
+	public StudentPOJO search(int id) {
+		StudentPOJO pojo = repository.search(id);
+		return pojo;
+	}
 
 }
