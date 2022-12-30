@@ -9,7 +9,6 @@ import javax.persistence.Persistence;
 import javax.persistence.Query;
 
 import org.hibernate.TransactionException;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.jspiders.springmvc.pojo.StudentPOJO;
@@ -83,6 +82,27 @@ public class StudentRepository {
 		openConnection();
 		transaction.begin();
 		StudentPOJO pojo = manager.find(StudentPOJO.class , id);
+		transaction.commit();
+		closeConnection();
+		return pojo;
+	}
+
+	public List<StudentPOJO> searchAll() {
+		openConnection();
+		transaction.begin();
+		jpql = "from StudentPOJO";
+		query = manager.createQuery(jpql);
+		List<StudentPOJO> pojos = query.getResultList();
+		transaction.commit();
+		closeConnection();
+		return pojos;
+	}
+
+	public StudentPOJO remove(int id) {
+		openConnection();
+		transaction.begin();
+		StudentPOJO pojo = manager.find(StudentPOJO.class, id);
+		manager.remove(pojo);
 		transaction.commit();
 		closeConnection();
 		return pojo;

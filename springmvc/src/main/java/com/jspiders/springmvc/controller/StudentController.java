@@ -1,5 +1,7 @@
 package com.jspiders.springmvc.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -78,7 +80,22 @@ public class StudentController {
 	}
 	
 	@GetMapping("/remove")
-	public String remove() {
+	public String remove(ModelMap map) {
+		List<StudentPOJO> students = service.searchAll();
+		map.addAttribute("students", students);
+		return "RemoveStudent";
+	}
+	
+	@PostMapping("/remove")
+	public String removeData(@RequestParam int id, ModelMap map) {
+		StudentPOJO student = service.remove(id);
+		if (student != null) {
+			map.addAttribute("msg", "Student removed successfully");
+		} else {
+			map.addAttribute("msg", "Data not found..!!");
+		}
+		List<StudentPOJO> students = service.searchAll();
+		map.addAttribute("students", students);
 		return "RemoveStudent";
 	}
 
