@@ -1,5 +1,7 @@
 package com.jspiders.springmvc.repository;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
@@ -19,6 +21,7 @@ public class StudentRepository {
 	private static EntityManager manager;
 	private static EntityTransaction transaction;
 	private static Query query;
+	private static String jpql;
 
 	private static void openConnection() {
 		factory = Persistence.createEntityManagerFactory("student");
@@ -45,9 +48,18 @@ public class StudentRepository {
 	public StudentPOJO login(String username, String password) {
 		openConnection();
 		transaction.begin();
-
+		jpql = "from StudentPOJO "
+				+ "where username = '"
+				+ username + "' "
+				+ "and password ='"
+				+ password + "'";
+		query = manager.createQuery(jpql);
+		List<StudentPOJO> list = (List<StudentPOJO>) query.getResultList();
 		transaction.commit();
 		closeConnection();
+		for (StudentPOJO pojo : list) {
+			return pojo;
+		}
 		return null;
 	}
 

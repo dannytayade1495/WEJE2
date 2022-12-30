@@ -22,8 +22,14 @@ public class StudentController {
 	}
 
 	@PostMapping("/login")
-	public String login() {
-		return "Home";
+	public String login(@RequestParam String username,
+			@RequestParam String password, ModelMap map) {
+		StudentPOJO student = service.login(username, password);
+		if (student != null) {
+			return "Home";
+		}
+		map.addAttribute("msg", "Inavlid username or password..!!");
+		return "LoginForm";
 	}
 	
 	@GetMapping("/add")

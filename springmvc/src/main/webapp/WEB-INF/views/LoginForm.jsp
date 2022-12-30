@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%
+String msg = (String) request.getAttribute("msg");
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,6 +46,15 @@ body {
 </head>
 <body>
 
+	<%
+	if (msg != null) {
+	%>
+	<h3 align="center">
+		<%=msg%>
+	</h3>
+	<%
+	}
+	%>
 	<fieldset>
 		<legend>Login to proceed</legend>
 		<form action="./login" method="post">
