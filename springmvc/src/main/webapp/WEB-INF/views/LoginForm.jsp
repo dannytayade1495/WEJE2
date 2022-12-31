@@ -41,7 +41,9 @@ body {
 	background-image:
 		url('https://www.xmple.com/wallpaper/linear-blue-white-highlight-gradient-1920x1080-c2-ffffff-e0ffff-l-50-a-165-f-21.svg');
 	background-size: 100%;
+	margin: 0 auto;
 }
+
 </style>
 </head>
 <body>
@@ -55,24 +57,23 @@ body {
 	<%
 	}
 	%>
-	<fieldset>
-		<legend>Login to proceed</legend>
-		<form action="./login" method="post">
-			<table>
-				<tr>
-					<td>Username :</td>
-					<td><input type="text" name="username"></td>
-				</tr>
-				<tr>
-					<td>Password :</td>
-					<td><input type="password" name="password"></td>
-				</tr>
-				<tr>
-					<td><input type="submit" value="Login"></td>
-				</tr>
-			</table>
-		</form>
-	</fieldset>
-
+		<fieldset>
+			<legend>Login to proceed</legend>
+			<form action="./login" method="post">
+				<table>
+					<tr>
+						<td>Username :</td>
+						<td><input type="text" name="username"></td>
+					</tr>
+					<tr>
+						<td>Password :</td>
+						<td><input type="password" name="password"></td>
+					</tr>
+					<tr>
+						<td><input type="submit" value="Login"></td>
+					</tr>
+				</table>
+			</form>
+		</fieldset>
 </body>
 </html>

@@ -106,4 +106,19 @@ public class StudentRepository {
 		return pojo;
 	}
 
+	public void update(int id, String name, String email, long contact, String city, String username, String password) {
+		openConnection();
+		transaction.begin();
+		StudentPOJO pojo = manager.find(StudentPOJO.class, id);
+		pojo.setName(name);
+		pojo.setEmail(email);
+		pojo.setContact(contact);
+		pojo.setCity(city);
+		pojo.setUsername(username);
+		pojo.setPassword(password);
+		manager.persist(pojo);
+		transaction.commit();
+		closeConnection();
+	}
+
 }
