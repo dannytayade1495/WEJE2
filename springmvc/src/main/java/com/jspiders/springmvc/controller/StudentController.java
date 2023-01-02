@@ -26,7 +26,7 @@ public class StudentController {
 	@GetMapping("/home")
 	public String home(@SessionAttribute(name = "login", required = false) StudentPOJO login, ModelMap map) {
 		if (login == null) {
-			map.addAttribute("msg", "Login first to proceed..!!");
+			map.addAttribute("msg", "Please login to proceed..!!");
 			return "LoginForm";
 		}
 		return "Home";
@@ -39,7 +39,7 @@ public class StudentController {
 		if (student != null) {
 			HttpSession session = request.getSession();
 			session.setAttribute("login", student);
-			session.setMaxInactiveInterval(30);
+			session.setMaxInactiveInterval(300);
 			return "Home";
 		}
 		map.addAttribute("msg", "Inavlid username or password..!!");
@@ -49,7 +49,7 @@ public class StudentController {
 	@GetMapping("/add")
 	public String add(@SessionAttribute(name = "login", required = false) StudentPOJO login, ModelMap map) {
 		if (login == null) {
-			map.addAttribute("msg", "Login first to proceed..!!");
+			map.addAttribute("msg", "Please login to proceed..!!");
 			return "LoginForm";
 		}
 		return "AddStudent";
@@ -60,7 +60,7 @@ public class StudentController {
 			@RequestParam String name, @RequestParam String email, @RequestParam long contact,
 			@RequestParam String city, @RequestParam String username, @RequestParam String password, ModelMap map) {
 		if (login == null) {
-			map.addAttribute("msg", "Login first to proceed..!!");
+			map.addAttribute("msg", "Please login to proceed..!!");
 			return "LoginForm";
 		}
 		StudentPOJO student = service.add(name, email, contact, city, username, password);
@@ -75,7 +75,7 @@ public class StudentController {
 	@GetMapping("/search")
 	public String search(@SessionAttribute(name = "login", required = false) StudentPOJO login, ModelMap map) {
 		if (login == null) {
-			map.addAttribute("msg", "Login first to proceed..!!");
+			map.addAttribute("msg", "Please login to proceed..!!");
 			return "LoginForm";
 		}
 		return "SearchStudent";
@@ -85,7 +85,7 @@ public class StudentController {
 	public String searchData(@SessionAttribute(name = "login", required = false) StudentPOJO login,
 			@RequestParam int id, ModelMap map) {
 		if (login == null) {
-			map.addAttribute("msg", "Login first to proceed..!!");
+			map.addAttribute("msg", "Please login to proceed..!!");
 			return "LoginForm";
 		}
 		StudentPOJO student = service.search(id);
@@ -100,7 +100,7 @@ public class StudentController {
 	@GetMapping("/update")
 	public String update(@SessionAttribute(name = "login", required = false) StudentPOJO login, ModelMap map) {
 		if (login == null) {
-			map.addAttribute("msg", "Login first to proceed..!!");
+			map.addAttribute("msg", "Please login to proceed..!!");
 			return "LoginForm";
 		}
 		List<StudentPOJO> students = service.searchAll();
@@ -112,7 +112,7 @@ public class StudentController {
 	public String updateForm(@SessionAttribute(name = "login", required = false) StudentPOJO login,
 			@RequestParam int id, ModelMap map) {
 		if (login == null) {
-			map.addAttribute("msg", "Login first to proceed..!!");
+			map.addAttribute("msg", "Please login to proceed..!!");
 			return "LoginForm";
 		}
 		StudentPOJO student = service.search(id);
@@ -131,7 +131,7 @@ public class StudentController {
 			@RequestParam int id, @RequestParam String name, @RequestParam String email, @RequestParam long contact,
 			@RequestParam String city, @RequestParam String username, @RequestParam String password, ModelMap map) {
 		if (login == null) {
-			map.addAttribute("msg", "Login first to proceed..!!");
+			map.addAttribute("msg", "Please login to proceed..!!");
 			return "LoginForm";
 		}
 		StudentPOJO student = service.search(id);
@@ -147,7 +147,7 @@ public class StudentController {
 	@GetMapping("/remove")
 	public String remove(@SessionAttribute(name = "login", required = false) StudentPOJO login, ModelMap map) {
 		if (login == null) {
-			map.addAttribute("msg", "Login first to proceed..!!");
+			map.addAttribute("msg", "Please login to proceed..!!");
 			return "LoginForm";
 		}
 		List<StudentPOJO> students = service.searchAll();
@@ -159,7 +159,7 @@ public class StudentController {
 	public String removeData(@SessionAttribute(name = "login", required = false) StudentPOJO login,
 			@RequestParam int id, ModelMap map) {
 		if (login == null) {
-			map.addAttribute("msg", "Login first to proceed..!!");
+			map.addAttribute("msg", "Please login to proceed..!!");
 			return "LoginForm";
 		}
 		StudentPOJO student = service.remove(id);

@@ -28,9 +28,7 @@ fieldset table {
 }
 
 fieldset {
-	/* margin: 15px 520px; */
-	margin: 20% 20%;
-	align-content: center;
+	margin: 15px 520px;
 	text-align: center;
 }
 
@@ -45,7 +43,6 @@ body {
 	background-size: 100%;
 	margin: 0 auto;
 }
-
 </style>
 </head>
 <body>
@@ -59,23 +56,23 @@ body {
 	<%
 	}
 	%>
-		<fieldset>
-			<legend>Login to proceed</legend>
-			<form action="./login" method="post">
-				<table>
-					<tr>
-						<td>Username :</td>
-						<td><input type="text" name="username"></td>
-					</tr>
-					<tr>
-						<td>Password :</td>
-						<td><input type="password" name="password"></td>
-					</tr>
-					<tr>
-						<td><input type="submit" value="Login"></td>
-					</tr>
-				</table>
-			</form>
-		</fieldset>
+	<fieldset>
+		<legend>Login to proceed</legend>
+		<form action="./login" method="post">
+			<table>
+				<tr>
+					<td>Username :</td>
+					<td><input type="text" name="username"></td>
+				</tr>
+				<tr>
+					<td>Password :</td>
+					<td><input type="password" name="password"></td>
+				</tr>
+				<tr>
+					<td><input type="submit" value="Login"></td>
+				</tr>
+			</table>
+		</form>
+	</fieldset>
 </body>
 </html>
