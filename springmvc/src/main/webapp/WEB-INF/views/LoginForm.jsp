@@ -28,7 +28,9 @@ fieldset table {
 }
 
 fieldset {
-	margin: 15px 520px;
+	/* margin: 15px 520px; */
+	margin: 20% 20%;
+	align-content: center;
 	text-align: center;
 }
 
