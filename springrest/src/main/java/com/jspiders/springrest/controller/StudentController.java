@@ -55,8 +55,8 @@ public class StudentController {
 		}
 		return new ResponseEntity<StudentResponse>
 		(new StudentResponse
-		("FAIL", "Student Not Found", pojo, null),
-				HttpStatus.NO_CONTENT);
+		("FAIL", "Student Not Found", null, null),
+				HttpStatus.BAD_REQUEST);
 	}
 
 }
